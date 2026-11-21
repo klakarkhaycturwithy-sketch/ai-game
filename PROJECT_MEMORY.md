@@ -47,6 +47,10 @@
   - สร้างสกิล `matchmaking-dedicated` (Colyseus/Photon/Nakama/AWS GameLift, server-authoritative, scaling) และ `voice-chat-sfu` (LiveKit/mediasoup/Janus, simulcast, scaling/cost)
   - สกิลถูก OpenCode ค้นพบอัตโนมัติผ่าน compatibility source `.agents/skills` (ID: `matchmaking-dedicated`, `voice-chat-sfu`)
   - ยังไม่ได้เชื่อมต่อ dedicated server จริง — เป็นเรื่องระดับ BIG (ค่าใช้จ่าย/hosting) ต้องได้รับอนุมัติจากคุณ `game` ก่อน
+- **[2026-11-21] เผยแพร่โปรเจกต์ขึ้น GitHub (`v1.8.0`):**
+  - สร้าง repository สาธารณะ `klakarkhaycturwithy-sketch/ai-game` บน GitHub และ push ขึ้นไป (branch `main`)
+  - ตั้งค่า git author name เป็น `Game` (local) ตามที่คุณ `game` ระบุ
+  - เพิ่ม `.gitignore` เพื่อไม่ push โฟลเดอร์ `backups/` ขึ้น repository
 
 ---
 
@@ -124,3 +128,4 @@
 4. เมื่อเริ่มเกมที่ต้องการระบบออนไลน์ ให้โหลดสกิล `supabase` (`@supabase`) เพื่อออกแบบ Auth/DB/Realtime พร้อม RLS security
 5. สำหรับเกม multiplayer ขั้นสูง ให้โหลด `@supabase-voice-chat` (voice chat) และ `@supabase-matchmaking` (lobby/matchmaking) ตามต้องการ
 6. สำหรับเกม competitive/ผู้เล่นจำนวนมาก ให้โหลด `@matchmaking-dedicated` (dedicated server) และ `@voice-chat-sfu` (SFU voice chat) ตามต้องการ (BIG decision: ค่าใช้จ่าย/hosting)
+7. Repository บน GitHub: https://github.com/klakarkhaycturwithy-sketch/ai-game (public, branch main) — ใช้สำหรับ portfolio/showcase
