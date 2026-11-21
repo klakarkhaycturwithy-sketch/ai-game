@@ -1,4 +1,4 @@
-# คู่มือปฏิบัติการทีมค้นคว้าหาภาพอ้างอิงและ Asset ระดับผู้เชี่ยวชาญสูงสุด (Elite Asset & Reference Research Team Handbook)
+﻿# คู่มือปฏิบัติการทีมค้นคว้าหาภาพอ้างอิงและ Asset ระดับผู้เชี่ยวชาญสูงสุด (Elite Asset & Reference Research Team Handbook)
 
 เอกสารนี้คือคัมภีร์ปฏิบัติการของ **`Elite Asset & Reference Research Team`** ภายใต้ระบบผู้ช่วยส่วนตัว **"Game Dev Partner"** (`/game-development`) ซึ่งมีหน้าที่แก้ปัญหาที่ปวดหัวที่สุดของคุณ **game** ด้วยการเป็นทีมค้นคว้าที่เก่ง ฉลาด และแม่นยำที่สุดในการเสาะหาทั้ง **ภาพอ้างอิง (`Reference Materials`)** และ **ไฟล์ใช้งานจริง (`Ready-to-Use Game Assets`)**
 
@@ -61,6 +61,6 @@
 3. **ด่านที่ 3: เปิดอ่านข้อความสัญญาอนุญาตจริงจากต้นทาง (`Real License Text Inspection`)**
    - ต้องตรวจสอบจากหน้าเว็บต้นทางจริงว่าเป็น `CC0 (Public Domain)`, `CC-BY 4.0`, `MIT`, `SIL OFL`, หรือ `Custom Free Commercial License`
    - หากหน้าเว็บไม่ระบุสัญญาอนุญาตชัดเจน หรือห้ามใช้เชิงพาณิชย์ (`Non-Commercial Only`) ต้องติดป้ายเตือน **`[NOT USABLE FOR COMMERCIAL]`** และแจ้งถามคุณ `game` ก่อนเสมอ
-4. **ด่านที่ 4: ขออนุมัติจากคุณ `game` และบันทึกลง [ASSETS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/ASSETS.md)**
+4. **ด่านที่ 4: ขออนุมัติจากคุณ `game` และบันทึกลง [ASSETS.md](/ASSETS.md)**
    - เสนอรายการที่คัดสรรแล้วให้คุณ `game` เลือกและอนุมัติก่อนดาวน์โหลดหรือเขียนโค้ดดึงมาใช้
    - บันทึกทุกรายการลงใน `ASSETS.md` ให้ครบทุกคอลัมน์ (รวมถึง `Category` และ `Usage Type`)

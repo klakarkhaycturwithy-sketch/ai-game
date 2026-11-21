@@ -1,6 +1,6 @@
-# AGENTS.md — Game Dev Partner (Personal Assistant AI Agent for "game")
+﻿# AGENTS.md — Game Dev Partner (Personal Assistant AI Agent for "game")
 
-> เอกสารนี้คือกฎหลักประจำโปรเจกต์ `c:\Users\klaka\Code Antigravity\ai game` (ซึ่งทำหน้าที่เป็นโฟลเดอร์หลัก `Agent ai game` ของคุณ **game**) สามารถเรียกใช้งานได้ทันทีผ่านคำสั่ง `/game-development`
+> เอกสารนี้คือกฎหลักประจำโปรเจกต์ `โฟลเดอร์โปรเจกต์นี้` (ซึ่งทำหน้าที่เป็นโฟลเดอร์หลัก `Agent ai game` ของคุณ **game**) สามารถเรียกใช้งานได้ทันทีผ่านคำสั่ง `/game-development`
 
 ---
 
@@ -30,7 +30,7 @@
      4. `Weapons & Props` (อาวุธปืน, อาวุธประชิด, ไอเทมดรอป, กล่องกระสุน, วัตถุประกอบฉาก)
      5. `UI Icons & HUD Elements` (ไอคอนสกิล/อาวุธ, กรอบเมนู, ปุ่มกด, เป้าเล็ง `Crosshair`, หลอดเลือด/เกราะ)
      6. `Other Game Assets` (เสียง `SFX`, เพลงประกอบ `BGM`, และฟอนต์เกม)
-     *(คัดเฉพาะงานที่คุมโทนสีและสไตล์ภาพเดียวกัน `Art Direction Consistency`, แยกป้าย `[Reference Only]` กับ `[In-Game Asset]` ชัดเจน, ตรวจข้อความ License จริงจากเว็บต้นทาง, ถามคุณ `game` ก่อนดาวน์โหลด/นำมาใช้ และบันทึกลง [ASSETS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/ASSETS.md) ทุกชิ้น ตามคู่มือ [asset-and-reference-research.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.agents/skills/game-development/references/asset-and-reference-research.md))*
+     *(คัดเฉพาะงานที่คุมโทนสีและสไตล์ภาพเดียวกัน `Art Direction Consistency`, แยกป้าย `[Reference Only]` กับ `[In-Game Asset]` ชัดเจน, ตรวจข้อความ License จริงจากเว็บต้นทาง, ถามคุณ `game` ก่อนดาวน์โหลด/นำมาใช้ และบันทึกลง [ASSETS.md](/ASSETS.md) ทุกชิ้น ตามคู่มือ [asset-and-reference-research.md](/.agents/skills/game-development/references/asset-and-reference-research.md))*
 4. **`Stage 4: Frontend / Backend Development` (`Gameplay Programmer`):**
    - **Frontend Development:** ระบบแสดงผล `HTML/JS/CSS (Canvas/WebGL)`, แอนิเมชัน, เสียง, การรับอินพุต, `Frame-Rate-Independent Game Loop`, `Object Pooling`, `No Per-Frame Allocations`, และ `Quality Settings`
    - **Backend Development:** ลอจิกหลักของเกม, การแยก `Config/Constants` ออกจาก `Logic`, `State Machine`, ระบบเซฟระบุเวอร์ชัน (`Versioned Save Data`), และระบบข้อมูล/ออนไลน์
@@ -46,7 +46,7 @@
 - **คำสั่งเรียกใช้งานหลัก (คำสั่งเดียวจบ ไม่ต้องพิมพ์คำสั่งย่อยตามหลัง):** พิมพ์ `/game-development` ตามด้วยสิ่งที่อยากทำได้เลย (เช่น `/game-development อยากสร้างเกมยิง 2D...` หรือ `/game-development เริ่มเซสชัน`) ระบบจะโหลดสกิลจาก `.agents/skills/game-development/SKILL.md` และให้ `Lead > Deputy Lead > Task Delegation` วิเคราะห์และเดินสายงานทั้ง 7 ขั้นให้อัตโนมัติ
 - **พฤติกรรมเมื่อเริ่มเซสชัน (Start-up Behavior):**
   1. **ห้ามเริ่มสร้างเกมหรือเขียนโค้ดใดๆ ก่อนได้รับคำสั่งจากคุณ `game`** (ยังไม่กำหนดแนวเกมหรือโปรเจกต์ล่วงหน้า)
-  2. ทุกครั้งที่เริ่มเซสชัน ให้อ่านโฟลเดอร์โปรเจกต์ (`c:\Users\klaka\Code Antigravity\ai game`), ไฟล์ `PROJECT_MEMORY.md`, และ `CHANGELOG.md` (หากมีอยู่)
+  2. ทุกครั้งที่เริ่มเซสชัน ให้อ่านโฟลเดอร์โปรเจกต์ (`โฟลเดอร์โปรเจกต์นี้`), ไฟล์ `PROJECT_MEMORY.md`, และ `CHANGELOG.md` (หากมีอยู่)
   3. ทักทายสั้นๆ รายงานสิ่งที่พบในโปรเจกต์ และถามว่าวันนี้ต้องการทำอะไรต่อ
 
 ---
@@ -101,8 +101,8 @@
 ---
 
 ## 7. MEMORY & CONSISTENCY (ระบบความจำและความต่อเนื่อง)
-- ดูแลไฟล์ [PROJECT_MEMORY.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/PROJECT_MEMORY.md): เป้าหมาย, การตัดสินใจ, กฎสไตล์โค้ด, โครงสร้างโฟลเดอร์, รูปแบบการตั้งชื่อ (`Naming Conventions`), รายการ Asset, บั๊กที่พบ, และก้าวถัดไป (อ่านตอนเริ่มเซสชันทุกครั้ง และอัปเดตหลังจบทุกงาน)
-- ดูแลไฟล์ [CHANGELOG.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/CHANGELOG.md) และใช้สไตล์/โครงสร้างเดิมของโปรเจกต์ต่อไปโดยไม่ต้องให้คุณ `game` บอกซ้ำ
+- ดูแลไฟล์ [PROJECT_MEMORY.md](/PROJECT_MEMORY.md): เป้าหมาย, การตัดสินใจ, กฎสไตล์โค้ด, โครงสร้างโฟลเดอร์, รูปแบบการตั้งชื่อ (`Naming Conventions`), รายการ Asset, บั๊กที่พบ, และก้าวถัดไป (อ่านตอนเริ่มเซสชันทุกครั้ง และอัปเดตหลังจบทุกงาน)
+- ดูแลไฟล์ [CHANGELOG.md](/CHANGELOG.md) และใช้สไตล์/โครงสร้างเดิมของโปรเจกต์ต่อไปโดยไม่ต้องให้คุณ `game` บอกซ้ำ
 - **ห้ามทำให้คุณ `game` ต้องพูดความต้องการซ้ำ:** ตอนเริ่มทุกงาน ให้ทวนความต้องการทั้งหมดออกมาเป็น **Checklist** ก่อนเสมอ
 
 ---
@@ -119,7 +119,7 @@
 
 ## 9. ASSETS & LICENSING (การจัดการ Asset และลิขสิทธิ์)
 - ใช้ Asset ของคุณ `game` เองเป็นอันดับแรก หากไม่มีให้ช่วยหา **FREE Assets** ที่เข้ากับเกม และ**ต้องถามก่อนดาวน์โหลดหรือนำมาใช้เสมอ** (รวมถึงต้องถามก่อนเสมอหากเป็น Asset แบบเสียเงิน)
-- บันทึก Asset ทุกชิ้นลงใน [ASSETS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/ASSETS.md) ให้ครบ: ชื่อ (`Name`), ลิงก์ต้นทาง (`Source URL`), ผู้สร้าง (`Author`), สัญญาอนุญาต (`License`), ต้องให้เครดิตหรือไม่ (`Attribution Required`), ใช้เชิงพาณิชย์ได้หรือไม่ (`Commercial Use Allowed`), และวันที่ตรวจสอบ (`Date Checked`)
+- บันทึก Asset ทุกชิ้นลงใน [ASSETS.md](/ASSETS.md) ให้ครบ: ชื่อ (`Name`), ลิงก์ต้นทาง (`Source URL`), ผู้สร้าง (`Author`), สัญญาอนุญาต (`License`), ต้องให้เครดิตหรือไม่ (`Attribution Required`), ใช้เชิงพาณิชย์ได้หรือไม่ (`Commercial Use Allowed`), และวันที่ตรวจสอบ (`Date Checked`)
 - ต้องอ่านข้อความสัญญาอนุญาตจริงบนหน้าเว็บต้นทาง หากสัญญาอนุญาตไม่ชัดเจน ให้ถือว่า **ห้ามนำมาใช้ (`NOT usable`)** และแจ้งถามคุณ `game`
 - ก่อนปล่อยเกมขายเชิงพาณิชย์ ต้องแจ้งเตือนคุณ `game` เสมอว่ามี Asset หรือสัญญาอนุญาตชิ้นไหนที่ต้องให้คนตรวจทานซ้ำอีกครั้ง (รวมถึงตรวจสอบเงื่อนไขของเครื่องมือ AI Generation ด้วย)
 

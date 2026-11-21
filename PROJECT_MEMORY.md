@@ -1,4 +1,4 @@
-# PROJECT_MEMORY.md — ความจำหลักของโปรเจกต์ (Game Dev Partner)
+﻿# PROJECT_MEMORY.md — ความจำหลักของโปรเจกต์ (Game Dev Partner)
 
 > ไฟล์นี้เก็บความจำถาวรของโปรเจกต์และข้อมูลผู้ใช้งานของคุณ **game** โดย **Game Dev Partner** จะอ่านไฟล์นี้ทุกครั้งที่เริ่มเซสชัน และอัปเดตหลังจบทุกงานเพื่อไม่ให้คุณ **game** ต้องอธิบายเรื่องเดิมซ้ำ
 
@@ -15,8 +15,8 @@
 
 ## 2. การตัดสินใจสำคัญที่อนุมัติแล้ว (Approved Decisions)
 - **[2026-11-21] รูปแบบระบบผู้ช่วยส่วนตัว:** ใช้โครงสร้างไฟล์ Markdown (`.md`) ในโปรเจกต์ (คล้ายระบบ `nongton`) โดยเรียกใช้งานผ่านคำสั่ง `/game-development` ยังไม่สร้างหน้าเว็บ Dashboard
-- **[2026-11-21] ขอบเขตสกิล `/game-development`:** สร้างไว้ที่ `.agents/skills/game-development/SKILL.md` ภายในโปรเจกต์นี้ โดยเชื่อมโยง (Bridge) ไปยังคู่มือเกมย่อยใน `C:\Users\klaka\.gemini\config\skills\game-development` เพื่อปกป้องไฟล์ระบบเดิมของเครื่อง 100%
-- **[2026-11-21] โครงสร้างโฟลเดอร์หลัก:** ใช้โฟลเดอร์ชั้นนอกสุด `c:\Users\klaka\Code Antigravity\ai game` เป็นโฟลเดอร์โปรเจกต์หลัก (`Agent ai game`) โดยตรง ไม่ซ้อนโฟลเดอร์ย่อย `Agent ai game`
+- **[2026-11-21] ขอบเขตสกิล `/game-development`:** สร้างไว้ที่ `.agents/skills/game-development/SKILL.md` ภายในโปรเจกต์นี้ โดยเชื่อมโยง (Bridge) ไปยังคู่มือเกมย่อยใน `~/.gemini/config/skills/game-development` เพื่อปกป้องไฟล์ระบบเดิมของเครื่อง 100%
+- **[2026-11-21] โครงสร้างโฟลเดอร์หลัก:** ใช้โฟลเดอร์ชั้นนอกสุด `โฟลเดอร์โปรเจกต์นี้` เป็นโฟลเดอร์โปรเจกต์หลัก (`Agent ai game`) โดยตรง ไม่ซ้อนโฟลเดอร์ย่อย `Agent ai game`
 - **[2026-11-21] รูปแบบคำสั่งเดียวและสายบังคับบัญชา 7 ขั้น (`v1.1.0`):**
   - ใช้คำสั่งเดียว `/game-development <คำสั่ง>` ได้เลยโดยไม่ต้องพิมพ์คำสั่งย่อยตามหลัง
   - ผสานบทบาทเดิมทั้ง 6 ตำแหน่ง (`Lead/Producer`, `Gameplay Programmer`, `Game Designer`, `Technical Artist & Asset Scout`, `QA Tester`, `Teacher`) เข้ากับสายบังคับบัญชา 7 ขั้น: `1. Lead > 2. Deputy Lead > 3. Task Delegation > 4. Frontend/Backend Development > 5. UX/UI Design > 6. Bug Testing & Fixing > 7. Final Quality Assurance`
@@ -51,6 +51,9 @@
   - สร้าง repository สาธารณะ `klakarkhaycturwithy-sketch/ai-game` บน GitHub และ push ขึ้นไป (branch `main`)
   - ตั้งค่า git author name เป็น `Game` (local) ตามที่คุณ `game` ระบุ
   - เพิ่ม `.gitignore` เพื่อไม่ push โฟลเดอร์ `backups/` ขึ้น repository
+- **[2026-11-21] ลบ path เครื่อง local ออกจากเอกสาร (`v1.9.0`):**
+  - ลบ path `c:\Users\klaka\Code Antigravity\ai game` และ `file:///c:/Users/klaka/...` ออกจากเอกสารทั้งหมดเพื่อไม่ให้แสดงบน GitHub
+  - เปลี่ยนลิงก์ภายในโปรเจกต์เป็น root-relative (เช่น `/ASSETS.md`) และ path ระดับเครื่อง (`.gemini/...`) เป็นข้อความ code (`~/.gemini/...`)
 
 ---
 
@@ -68,7 +71,7 @@
   - โค้ด JavaScript: ตัวแปรและฟังก์ชันใช้ `camelCase`, คลาสใช้ `PascalCase`, ค่าคงที่ใช้ `UPPER_SNAKE_CASE`
 - **โครงสร้างโฟลเดอร์ปัจจุบัน:**
   ```text
-  c:\Users\klaka\Code Antigravity\ai game\
+  โฟลเดอร์โปรเจกต์นี้\
   ├── AGENTS.md
   ├── PROJECT_MEMORY.md
   ├── CHANGELOG.md
@@ -116,7 +119,7 @@
 
 ## 4. สถานะโปรเจกต์เกมปัจจุบัน (Current Game Project Status)
 - **โปรเจกต์เกมปัจจุบัน:** ยังไม่ได้เลือกแนวเกมหรือเริ่มสร้างเกม (รอคำสั่งจากคุณ `game`)
-- **รายการ Asset (`Asset List`):** ดูรายละเอียดทั้งหมดใน [ASSETS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/ASSETS.md) (ปัจจุบันยังไม่มี Asset ภายนอก)
+- **รายการ Asset (`Asset List`):** ดูรายละเอียดทั้งหมดใน [ASSETS.md](/ASSETS.md) (ปัจจุบันยังไม่มี Asset ภายนอก)
 - **บั๊กที่พบ (`Known Bugs`):** ไม่มี
 
 ---

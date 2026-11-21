@@ -1,4 +1,4 @@
-# Game Dev Partner — Personal Assistant AI Agent สำหรับคุณ "game" (`/game-development`)
+﻿# Game Dev Partner — Personal Assistant AI Agent สำหรับคุณ "game" (`/game-development`)
 
 **`Game Dev Partner`** คือผู้ช่วยส่วนตัวด้านการออกแบบและพัฒนาเกมของคุณ **`game`** ที่รวมทีมงานเสมือน 6 บทบาทไว้ในตัว พูดคุยและอธิบายด้วยภาษาไทยที่เป็นกันเองเหมือนเพื่อน พร้อมสอนหลักคิดการออกแบบเกมและการเขียนโค้ดคุณภาพสูงไปพร้อมกับการลงมือทำจริง
 
@@ -41,21 +41,21 @@
 
 ---
 
-## 3. โครงสร้างไฟล์ของระบบผู้ช่วยส่วนตัว (`c:\Users\klaka\Code Antigravity\ai game`)
+## 3. โครงสร้างไฟล์ของระบบผู้ช่วยส่วนตัว (`โฟลเดอร์โปรเจกต์นี้`)
 
-- [AGENTS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/AGENTS.md) — กฎหลักฉบับเต็มของ **Game Dev Partner**
-- [PROJECT_MEMORY.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/PROJECT_MEMORY.md) — ความจำถาวรของโปรเจกต์ (เป้าหมาย, การตัดสินใจ, โครงสร้างโฟลเดอร์, กฎการตั้งชื่อ, บั๊ก, ก้าวถัดไป)
-- [CHANGELOG.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/CHANGELOG.md) — ประวัติการอัปเดตทุกเซสชัน
-- [ASSETS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/ASSETS.md) — ทะเบียนบันทึก Asset และการตรวจสอบลิขสิทธิ์
+- [AGENTS.md](/AGENTS.md) — กฎหลักฉบับเต็มของ **Game Dev Partner**
+- [PROJECT_MEMORY.md](/PROJECT_MEMORY.md) — ความจำถาวรของโปรเจกต์ (เป้าหมาย, การตัดสินใจ, โครงสร้างโฟลเดอร์, กฎการตั้งชื่อ, บั๊ก, ก้าวถัดไป)
+- [CHANGELOG.md](/CHANGELOG.md) — ประวัติการอัปเดตทุกเซสชัน
+- [ASSETS.md](/ASSETS.md) — ทะเบียนบันทึก Asset และการตรวจสอบลิขสิทธิ์
 - `backups/` — โฟลเดอร์สำรองไฟล์อัตโนมัติพร้อมระบุวันเวลา (`YYYYMMDD-HHMM/`) ก่อนแก้ไขไฟล์ทุกครั้ง
-- [.agents/rules/game-dev-partner.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.agents/rules/game-dev-partner.md) — กฎ `always_on` ที่ทำงานอัตโนมัติเมื่อเปิดโฟลเดอร์นี้
-- [.agents/skills/game-development/SKILL.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.agents/skills/game-development/SKILL.md) — ตัวรับคำสั่ง `/game-development` ประจำโปรเจกต์ (เชื่อมโยงกับคลังสกิลเกมย่อยระดับเครื่องโดยไม่แตะไฟล์ระบบเดิม)
-- [.agents/skills/supabase/SKILL.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.agents/skills/supabase/SKILL.md) — ความรู้ Supabase สำหรับเกม Web (Auth, Database, Storage, Realtime, Edge Functions, RLS) ที่ผู้ช่วยส่วนตัวโหลดได้เมื่องานเกี่ยวข้องกับระบบออนไลน์
+- [.agents/rules/game-dev-partner.md](/.agents/rules/game-dev-partner.md) — กฎ `always_on` ที่ทำงานอัตโนมัติเมื่อเปิดโฟลเดอร์นี้
+- [.agents/skills/game-development/SKILL.md](/.agents/skills/game-development/SKILL.md) — ตัวรับคำสั่ง `/game-development` ประจำโปรเจกต์ (เชื่อมโยงกับคลังสกิลเกมย่อยระดับเครื่องโดยไม่แตะไฟล์ระบบเดิม)
+- [.agents/skills/supabase/SKILL.md](/.agents/skills/supabase/SKILL.md) — ความรู้ Supabase สำหรับเกม Web (Auth, Database, Storage, Realtime, Edge Functions, RLS) ที่ผู้ช่วยส่วนตัวโหลดได้เมื่องานเกี่ยวข้องกับระบบออนไลน์
 - `.agents/skills/supabase/references/` — คู่มือเฉพาะด้าน: `realtime-multiplayer.md`, `anti-cheat.md`, `auth-patterns.md`
 - `.agents/skills/supabase-voice-chat/SKILL.md` — สกิลย่อย: Realtime voice chat (WebRTC + Supabase signaling)
 - `.agents/skills/supabase-matchmaking/SKILL.md` — สกิลย่อย: Lobby/Matchmaking/Queue/ELO
 - `.agents/skills/matchmaking-dedicated/SKILL.md` — สกิลย่อย: Dedicated-server matchmaking (Colyseus/Photon/Nakama)
 - `.agents/skills/voice-chat-sfu/SKILL.md` — สกิลย่อย: SFU voice chat (LiveKit/mediasoup/Janus)
 - `templates/supabase/` — เทมเพลตเตรียมเชื่อมต่อ Supabase (`README.md` playbook, `supabaseClient.example.js`, `schema.sql`, `.env.example`) ยังไม่สร้างโปรเจกต์จริง
-- [opencode.jsonc](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/opencode.jsonc) — การตั้งค่า OpenCode ระดับโปรเจกต์: โหลดกฎ `always_on` จาก `.agents/rules/game-dev-partner.md` เป็น `instructions` ให้ผู้ช่วยส่วนตัวทำงานใน OpenCode ได้ทันที
-- [.opencode/commands/game-development.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.opencode/commands/game-development.md) — คำสั่ง Slash `/game-development` สำหรับ OpenCode (เรียกใช้สกิล `game-development` และโหลดไฟล์ความจำโปรเจกต์อัตโนมัติ)
+- [opencode.jsonc](/opencode.jsonc) — การตั้งค่า OpenCode ระดับโปรเจกต์: โหลดกฎ `always_on` จาก `.agents/rules/game-dev-partner.md` เป็น `instructions` ให้ผู้ช่วยส่วนตัวทำงานใน OpenCode ได้ทันที
+- [.opencode/commands/game-development.md](/.opencode/commands/game-development.md) — คำสั่ง Slash `/game-development` สำหรับ OpenCode (เรียกใช้สกิล `game-development` และโหลดไฟล์ความจำโปรเจกต์อัตโนมัติ)

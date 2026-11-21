@@ -1,4 +1,4 @@
-# คู่มือปฏิบัติการทีมเสมือน 6 บทบาท สายบังคับบัญชา 7 ขั้น และขั้นตอนการตัดสินใจ (6-Role Team, 7-Stage Hierarchy & Decision Protocol)
+﻿# คู่มือปฏิบัติการทีมเสมือน 6 บทบาท สายบังคับบัญชา 7 ขั้น และขั้นตอนการตัดสินใจ (6-Role Team, 7-Stage Hierarchy & Decision Protocol)
 
 เอกสารนี้เป็นคู่มืออ้างอิงภายในของ `/game-development` สำหรับผู้ช่วยส่วนตัว **"Game Dev Partner"** ของคุณ **game**
 
@@ -23,9 +23,9 @@
    - กระจายงานให้ฝ่ายที่เกี่ยวข้อง (เรียกใช้ `Subagent` ทำงานขนานเมื่อทำได้)
    - ประสานงานกับ **`Game Designer`** (`Core Loop`, `Progression`, `Difficulty Curve`, `Game Feel / Juice`) และ **`Technical Artist & Asset Scout`** (หา FREE Assets, ตรวจข้อความ License จริงจากต้นทาง, บันทึกใน `ASSETS.md`)
    - **`Stage 3.5: Elite Asset & Reference Research Team` (ทีมค้นคว้าหาภาพอ้างอิงและ Asset ระดับผู้เชี่ยวชาญสูงสุด):**
-     - โหลดคู่มือปฏิบัติการจาก [asset-and-reference-research.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.agents/skills/game-development/references/asset-and-reference-research.md)
+     - โหลดคู่มือปฏิบัติการจาก [asset-and-reference-research.md](/.agents/skills/game-development/references/asset-and-reference-research.md)
      - ค้นหาและคัดกรองครบทั้ง 6 หมวด: `1) Illustrations & Characters`, `2) Backgrounds & Environments`, `3) Visual Effects (VFX)`, `4) Weapons & Props`, `5) UI Icons & HUD Elements`, `6) Other Game Assets (Audio & Fonts)`
-     - ตรวจสอบความเข้ากันของโทนสีและสไตล์ภาพ (`Art Direction Consistency`), แยกป้ายกำกับ `[Reference Only]` กับ `[In-Game Asset]` อย่างชัดเจน, ตรวจข้อความ License จริงจากหน้าเว็บต้นทาง, เสนอให้คุณ `game` อนุมัติก่อนนำเข้าเกม และบันทึกลง [ASSETS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/ASSETS.md) ทุกชิ้นก่อนส่งให้ทีม `Frontend/Backend Development` และ `UX/UI Design`
+     - ตรวจสอบความเข้ากันของโทนสีและสไตล์ภาพ (`Art Direction Consistency`), แยกป้ายกำกับ `[Reference Only]` กับ `[In-Game Asset]` อย่างชัดเจน, ตรวจข้อความ License จริงจากหน้าเว็บต้นทาง, เสนอให้คุณ `game` อนุมัติก่อนนำเข้าเกม และบันทึกลง [ASSETS.md](/ASSETS.md) ทุกชิ้นก่อนส่งให้ทีม `Frontend/Backend Development` และ `UX/UI Design`
 4. **`Stage 4: Frontend / Backend Development` (`Gameplay Programmer`):**
    - **Frontend Development:** พัฒนาระบบภาพ `Canvas/WebGL`, แอนิเมชัน, เสียง, การรับปุ่มกด, `Frame-Rate-Independent Game Loop`, `Object Pooling`, `No Per-Frame Allocations`, และ `Quality Settings`
    - **Backend Development:** พัฒนาลอจิกหลักของเกม, แยก `Config/Constants` ออกจาก `Logic`, `State Machine`, ระบบเซฟระบุเวอร์ชัน (`Versioned Save Data`), และระบบข้อมูล/Multiplayer

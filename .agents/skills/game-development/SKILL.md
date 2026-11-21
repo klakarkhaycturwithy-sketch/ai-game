@@ -1,4 +1,4 @@
----
+﻿---
 name: game-development
 description: >-
   Game Dev Partner (/game-development) — Personal Assistant AI Agent & 6-Role Virtual Game Studio
@@ -15,11 +15,11 @@ description: >-
 
 ## 1. ขั้นตอนเริ่มต้นเมื่อเรียก `/game-development` (Start-Up & Intake Protocol)
 
-1. **อ่านไฟล์ความจำหลักของโปรเจกต์ (`c:\Users\klaka\Code Antigravity\ai game`):**
-   - อ่าน [AGENTS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/AGENTS.md)
-   - อ่าน [PROJECT_MEMORY.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/PROJECT_MEMORY.md)
-   - อ่าน [CHANGELOG.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/CHANGELOG.md)
-   - อ่าน [ASSETS.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/ASSETS.md) (เมื่อเกี่ยวข้องกับรูปภาพ เสียง โมเดล หรือเอฟเฟกต์)
+1. **อ่านไฟล์ความจำหลักของโปรเจกต์ (`โฟลเดอร์โปรเจกต์นี้`):**
+   - อ่าน [AGENTS.md](/AGENTS.md)
+   - อ่าน [PROJECT_MEMORY.md](/PROJECT_MEMORY.md)
+   - อ่าน [CHANGELOG.md](/CHANGELOG.md)
+   - อ่าน [ASSETS.md](/ASSETS.md) (เมื่อเกี่ยวข้องกับรูปภาพ เสียง โมเดล หรือเอฟเฟกต์)
 2. **หากยังไม่มีคำสั่งสร้างหรือแก้ไขงาน (เช่น เพิ่งเปิดเซสชัน):**
    - **ห้ามเริ่มสร้างอะไรเองเด็ดขาด**
    - ทักทายคุณ `game` สั้นๆ รายงานสิ่งที่พบในโฟลเดอร์โปรเจกต์ `PROJECT_MEMORY.md` และ `CHANGELOG.md` แล้วถามว่าวันนี้ต้องการทำอะไร
@@ -32,7 +32,7 @@ description: >-
 
 ## 2. การทำงานของทีมเสมือน 6 บทบาท และสายบังคับบัญชา 7 ขั้น (6-Role Virtual Studio & 7-Stage Hierarchical Pipeline)
 
-คุณ **game** สามารถพิมพ์คำสั่งเดียว `/game-development <สิ่งที่ต้องการให้ทำ>` ได้เลยโดย**ไม่ต้องพิมพ์คำสั่งย่อยตามหลัง** ระบบจะวิเคราะห์คำสั่งและเดินสายบังคับบัญชา 7 ขั้นที่ผสานกับทีมเสมือน 6 บทบาท และ **`Elite Asset & Reference Research Team`** ให้อัตโนมัติ (โหลดคู่มือเช็กลิสต์จาก [team-roles-and-workflow.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.agents/skills/game-development/references/team-roles-and-workflow.md), คู่มือทีมค้นคว้าจาก [asset-and-reference-research.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.agents/skills/game-development/references/asset-and-reference-research.md) และมาตรฐานโค้ดจาก [engineering-and-design-standards.md](file:///c:/Users/klaka/Code%20Antigravity/ai%20game/.agents/skills/game-development/references/engineering-and-design-standards.md)):
+คุณ **game** สามารถพิมพ์คำสั่งเดียว `/game-development <สิ่งที่ต้องการให้ทำ>` ได้เลยโดย**ไม่ต้องพิมพ์คำสั่งย่อยตามหลัง** ระบบจะวิเคราะห์คำสั่งและเดินสายบังคับบัญชา 7 ขั้นที่ผสานกับทีมเสมือน 6 บทบาท และ **`Elite Asset & Reference Research Team`** ให้อัตโนมัติ (โหลดคู่มือเช็กลิสต์จาก [team-roles-and-workflow.md](/.agents/skills/game-development/references/team-roles-and-workflow.md), คู่มือทีมค้นคว้าจาก [asset-and-reference-research.md](/.agents/skills/game-development/references/asset-and-reference-research.md) และมาตรฐานโค้ดจาก [engineering-and-design-standards.md](/.agents/skills/game-development/references/engineering-and-design-standards.md)):
 
 ### 2.1 สายบังคับบัญชา 7 ขั้น + ขั้นค้นคว้าเฉพาะทาง (`7-Stage Hierarchical Pipeline + Stage 3.5 Elite Research`)
 `1. Lead > 2. Deputy Lead > 3. Task Delegation > 3.5 Elite Asset & Reference Research > 4. Frontend/Backend Development > 5. UX/UI Design > 6. Bug Testing & Fixing > 7. Final Quality Assurance`
@@ -64,14 +64,14 @@ description: >-
 ## 3. การเชื่อมโยงคลังความรู้เสริมระดับเครื่อง (Global Sub-Skills Bridge)
 
 สกิล `/game-development` ในโปรเจกต์นี้เชื่อมต่อกับคลังความรู้เฉพาะทางเดิมในเครื่องของคุณ `game` โดยไม่แก้ไขไฟล์ระบบเดิม สามารถเปิดอ่านเพิ่มเติมตามประเภทของเกมได้ทันที:
-- **เกมบนเว็บ (`Web Games - HTML5/Canvas/WebGL`):** [SKILL.md](file:///C:/Users/klaka/.gemini/config/skills/game-development/web-games/SKILL.md)
-- **เกม 2D (`Sprites, Tilemaps, Physics`):** [SKILL.md](file:///C:/Users/klaka/.gemini/config/skills/game-development/2d-games/SKILL.md)
-- **เกม 3D (`Meshes, Shaders, Three.js/WebGL`):** [SKILL.md](file:///C:/Users/klaka/.gemini/config/skills/game-development/3d-games/SKILL.md)
-- **การออกแบบเกม (`GDD, Balancing, Player Psychology`):** [SKILL.md](file:///C:/Users/klaka/.gemini/config/skills/game-development/game-design/SKILL.md)
-- **งานศิลป์และแอนิเมชัน (`Game Art & Visual Pipeline`):** [SKILL.md](file:///C:/Users/klaka/.gemini/config/skills/game-development/game-art/SKILL.md)
-- **ระบบเสียง (`Game Audio & Adaptive Sound`):** [SKILL.md](file:///C:/Users/klaka/.gemini/config/skills/game-development/game-audio/SKILL.md)
-- **เกม PC (`Desktop / Steam Packaging`):** [SKILL.md](file:///C:/Users/klaka/.gemini/config/skills/game-development/pc-games/SKILL.md)
-- **ระบบผู้เล่นหลายคน (`Multiplayer & Networking`):** [SKILL.md](file:///C:/Users/klaka/.gemini/config/skills/game-development/multiplayer/SKILL.md)
+- **เกมบนเว็บ (`Web Games - HTML5/Canvas/WebGL`):** `~/.gemini/config/skills/game-development/web-games/SKILL.md`
+- **เกม 2D (`Sprites, Tilemaps, Physics`):** `~/.gemini/config/skills/game-development/2d-games/SKILL.md`
+- **เกม 3D (`Meshes, Shaders, Three.js/WebGL`):** `~/.gemini/config/skills/game-development/3d-games/SKILL.md`
+- **การออกแบบเกม (`GDD, Balancing, Player Psychology`):** `~/.gemini/config/skills/game-development/game-design/SKILL.md`
+- **งานศิลป์และแอนิเมชัน (`Game Art & Visual Pipeline`):** `~/.gemini/config/skills/game-development/game-art/SKILL.md`
+- **ระบบเสียง (`Game Audio & Adaptive Sound`):** `~/.gemini/config/skills/game-development/game-audio/SKILL.md`
+- **เกม PC (`Desktop / Steam Packaging`):** `~/.gemini/config/skills/game-development/pc-games/SKILL.md`
+- **ระบบผู้เล่นหลายคน (`Multiplayer & Networking`):** `~/.gemini/config/skills/game-development/multiplayer/SKILL.md`
 
 ---
 
