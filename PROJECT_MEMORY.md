@@ -58,6 +58,11 @@
   - สร้าง `package.json` และสคริปต์ CLI `bin/cli.js` พร้อมเชื่อม Global Link (`npm link`) เพื่อให้พิมพ์คำสั่งเดียว `npx ai-game-init` ดึงผู้ช่วยส่วนตัว `/game-development` ไปติดตั้งในโฟลเดอร์โปรเจกต์เกมใหม่ๆ ได้ทันทีผ่าน Terminal
   - มีระบบสำรองไฟล์อัตโนมัติลง `backups/YYYYMMDD-HHMM/` ก่อนอัปเดต และปกป้องไฟล์ความจำ (`PROJECT_MEMORY.md`, `CHANGELOG.md`, `ASSETS.md`) ไม่ให้ถูกเขียนทับ
   - สำรองไฟล์เดิมก่อนแก้ไขไว้ที่ `backups/20261121-2234/`, `backups/20261121-2238/` และ `backups/20261121-2241/` และอัปเดตขึ้น GitHub Repository `klakarkhaycturwithy-sketch/ai-game` เรียบร้อย
+- **[2026-11-21] เพิ่มสกิลช่วยวางแผนก่อนเริ่มงานแบบละเอียด (`game-planning` — `v2.1.0`):**
+  - สร้างสกิล `.agents/skills/game-planning/SKILL.md`, คำสั่ง OpenCode `.opencode/commands/game-planning.md`, และแม่แบบ `templates/planning/GAME_PLAN_TEMPLATE.md`
+  - ครอบคลุมโครงสร้างแผนงาน 5 มิติหลัก (`5-Pillar Master Game Plan`: 1. Goal/Platform/Hardware Lock, 2. One-Page GDD & Core Loop/Juice, 3. Visual Direction & 6-Category Asset Blueprint, 4. Technical Architecture & UX/UI Wireframe, 5. Step-by-Step Milestone Roadmap & Scope Creep Guard)
+  - กฎการเรียกใช้: **เรียกใช้เฉพาะตอนที่คุณ `game` พิมพ์สั่งให้วางแผนแยกต่างหากเท่านั้น** (เช่น พิมพ์ `/game-planning` หรือ `@game-planning`) โดยรองรับทั้งการสรุปแผนให้ดูในแชทและการสร้างบันทึกเป็นไฟล์ `GAME_PLAN.md` ในโปรเจกต์เมื่ออนุมัติแผน
+  - สำรองไฟล์เดิมไว้ที่ `backups/20261121-2257/` และเพิ่มเข้าใน `npx ai-game-init` (`v2.1.0`) พร้อมซิงก์ขึ้น GitHub Repository `klakarkhaycturwithy-sketch/ai-game`
 
 ---
 
@@ -88,7 +93,8 @@
   ├── backups/
   ├── .opencode/
   │   └── commands/
-  │       └── game-development.md
+  │       ├── game-development.md
+  │       └── game-planning.md
   └── .agents/
       ├── rules/
       │   └── game-dev-partner.md
@@ -99,6 +105,8 @@
           │       ├── asset-and-reference-research.md
           │       ├── team-roles-and-workflow.md
           │       └── engineering-and-design-standards.md
+          ├── game-planning/
+          │   └── SKILL.md
           ├── supabase/
           │   ├── SKILL.md
           │   └── references/
@@ -114,6 +122,8 @@
           └── voice-chat-sfu/
               └── SKILL.md
   ├── templates/
+  │   ├── planning/
+  │   │   └── GAME_PLAN_TEMPLATE.md
   │   └── supabase/
   │       ├── README.md
   │       ├── supabaseClient.example.js

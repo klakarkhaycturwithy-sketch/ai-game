@@ -61,8 +61,12 @@ description: >-
 
 ---
 
-## 3. การเชื่อมโยงคลังความรู้เสริมระดับเครื่อง (Global Sub-Skills Bridge)
+## 3. การเชื่อมโยงคลังความรู้เสริมระดับโปรเจกต์และระดับเครื่อง (Project & Global Sub-Skills Bridge)
 
+### 3.1 สกิลวางแผนก่อนเริ่มงานแบบละเอียด (`On-Demand Detailed Planning Skill`)
+- **การวางแผนเกมฉบับละเอียด 5 มิติ (`/game-planning` หรือ `@game-planning`):** [SKILL.md](/.agents/skills/game-planning/SKILL.md) และแม่แบบ [GAME_PLAN_TEMPLATE.md](/templates/planning/GAME_PLAN_TEMPLATE.md) *(เรียกใช้เฉพาะเมื่อคุณ `game` พิมพ์สั่งให้วางแผนแยกต่างหาก เช่น พิมพ์ `/game-planning` โดยสามารถเลือกให้แสดงแผนในแชทอย่างเดียว หรือบันทึกเป็นไฟล์ `GAME_PLAN.md` ในโปรเจกต์ก็ได้)*
+
+### 3.2 คลังความรู้เฉพาะทางระดับเครื่อง (Global Sub-Skills Bridge)
 สกิล `/game-development` ในโปรเจกต์นี้เชื่อมต่อกับคลังความรู้เฉพาะทางเดิมในเครื่องของคุณ `game` โดยไม่แก้ไขไฟล์ระบบเดิม สามารถเปิดอ่านเพิ่มเติมตามประเภทของเกมได้ทันที:
 - **เกมบนเว็บ (`Web Games - HTML5/Canvas/WebGL`):** `~/.gemini/config/skills/game-development/web-games/SKILL.md`
 - **เกม 2D (`Sprites, Tilemaps, Physics`):** `~/.gemini/config/skills/game-development/2d-games/SKILL.md`

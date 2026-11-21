@@ -4,6 +4,16 @@
 
 ---
 
+## [v2.1.0] — 2026-11-21 (Add On-Demand 5-Pillar Detailed Game Planning Skill `/game-planning`)
+### Added & Updated (สิ่งที่เพิ่มและอัปเดต)
+- สำรองไฟล์เดิมลงใน `backups/20261121-2257/` ก่อนทำการแก้ไขตามกฎ File Safety
+- สร้างสกิลวางแผนก่อนเริ่มงานแบบละเอียด [.agents/skills/game-planning/SKILL.md](/.agents/skills/game-planning/SKILL.md), คำสั่ง OpenCode [.opencode/commands/game-planning.md](/.opencode/commands/game-planning.md), และแม่แบบแผนงาน [templates/planning/GAME_PLAN_TEMPLATE.md](/templates/planning/GAME_PLAN_TEMPLATE.md)
+- ครอบคลุมโครงสร้างแผนงาน 5 มิติหลัก (`5-Pillar Master Game Plan`: 1. Goal/Platform/Hardware Lock, 2. Game Design Blueprint & Juice Checklist, 3. Visual Direction & 6-Category Asset Blueprint, 4. Technical Architecture & UX/UI Wireframe, 5. Step-by-Step Milestone Roadmap & Scope Creep Guard)
+- ตั้งค่าให้เรียกใช้งานแบบ **On-Demand เฉพาะเมื่อพิมพ์สั่งให้วางแผนแยกต่างหากเท่านั้น** (`/game-planning` หรือ `@game-planning`) รองรับทั้งการแสดงแผนในแชทและการสร้างไฟล์ `GAME_PLAN.md`
+- อัปเดต [bin/cli.js](/bin/cli.js) และ [package.json](/package.json) (`v2.1.0`) ให้ `npx ai-game-init` ติดตั้งและตรวจสอบสกิล `/game-planning` พร้อมซิงก์ขึ้น GitHub Repository `klakarkhaycturwithy-sketch/ai-game`
+
+---
+
 ## [v2.0.2] — 2026-11-21 (Standardize CLI Command to `npx ai-game-init`)
 ### Changed (สิ่งที่ปรับปรุง)
 - สำรองไฟล์เดิมลงใน `backups/20261121-2241/` ก่อนแก้ไขตามกฎ File Safety

@@ -13,6 +13,7 @@
 - **เขียนโค้ดและทำระบบเกม (`Frontend / Backend Development`):** `/game-development ช่วยสร้างระบบเคลื่อนที่และ Object Pooling สำหรับกระสุน`
 - **หา Asset ฟรีที่ถูกลิขสิทธิ์ (`Asset Scout`):** `/game-development ช่วยหา Asset ตัวละครและเสียงปืนฟรีที่ใช้เชิงพาณิชย์ได้ให้หน่อย`
 - **ตรวจสอบบั๊กและให้ช่วยสอน (`Bug Testing & Fixing` / `Teacher`):** `/game-development ช่วยตรวจบั๊กและอธิบายว่าทำไมลูปเกมถึงต้องใช้ deltaTime`
+- **สั่งวางแผนก่อนเริ่มงานแบบละเอียด (`On-Demand 5-Pillar Planning` — เรียกเฉพาะตอนที่ต้องการวางแผน):** `/game-planning ช่วยวางแผนเกมยิง 2D แบบละเอียดครบ 5 มิติก่อนเริ่มงาน`
 
 ---
 
@@ -64,6 +65,8 @@ npx ai-game-init status
 - `backups/` — โฟลเดอร์สำรองไฟล์อัตโนมัติพร้อมระบุวันเวลา (`YYYYMMDD-HHMM/`) ก่อนแก้ไขไฟล์ทุกครั้ง
 - [.agents/rules/game-dev-partner.md](/.agents/rules/game-dev-partner.md) — กฎ `always_on` ที่ทำงานอัตโนมัติเมื่อเปิดโฟลเดอร์นี้
 - [.agents/skills/game-development/SKILL.md](/.agents/skills/game-development/SKILL.md) — ตัวรับคำสั่ง `/game-development` ประจำโปรเจกต์ (เชื่อมโยงกับคลังสกิลเกมย่อยระดับเครื่องโดยไม่แตะไฟล์ระบบเดิม)
+- [.agents/skills/game-planning/SKILL.md](/.agents/skills/game-planning/SKILL.md) และ [templates/planning/GAME_PLAN_TEMPLATE.md](/templates/planning/GAME_PLAN_TEMPLATE.md) — สกิลช่วยวางแผนก่อนเริ่มงานแบบละเอียด 5 มิติ (`/game-planning` เรียกใช้เฉพาะเมื่อพิมพ์สั่งให้วางแผนแยกต่างหาก รองรับทั้งการแสดงแผนในแชทและสร้างไฟล์ `GAME_PLAN.md`)
+- [.opencode/commands/game-planning.md](/.opencode/commands/game-planning.md) — คำสั่ง Slash `/game-planning` สำหรับเรียกสกิลวางแผนแบบละเอียดใน OpenCode
 - [.agents/skills/supabase/SKILL.md](/.agents/skills/supabase/SKILL.md) — ความรู้ Supabase สำหรับเกม Web (Auth, Database, Storage, Realtime, Edge Functions, RLS) ที่ผู้ช่วยส่วนตัวโหลดได้เมื่องานเกี่ยวข้องกับระบบออนไลน์
 - `.agents/skills/supabase/references/` — คู่มือเฉพาะด้าน: `realtime-multiplayer.md`, `anti-cheat.md`, `auth-patterns.md`
 - `.agents/skills/supabase-voice-chat/SKILL.md` — สกิลย่อย: Realtime voice chat (WebRTC + Supabase signaling)
