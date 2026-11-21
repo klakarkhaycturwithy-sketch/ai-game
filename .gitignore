@@ -27,3 +27,6 @@ yarn-error.log*
 
 # Temp
 *.tmp
+
+# Backups (local file safety backups, not for version control)
+backups/
