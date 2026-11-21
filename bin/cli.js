@@ -181,13 +181,12 @@ function printHelpBanner() {
 Game Dev Partner v${PACKAGE_META.version} — Personal Assistant AI Agent (/game-development)
 
 Single-Command Usage (Recommended):
-  npx-ai-game-init          Auto-backup, install/update /game-development assistant, and verify status
-  npx ai-game-init          Run via npx anywhere on your machine
+  npx ai-game-init          Auto-backup, install/update /game-development assistant, and verify status
 
 Optional Subcommands:
-  npx-ai-game-init init     Install without overwriting existing files
-  npx-ai-game-init status   Check installed /game-development skills, rules, and memory files
-  npx-ai-game-init --version Print version
+  npx ai-game-init init      Install without overwriting existing files
+  npx ai-game-init status    Check installed /game-development skills, rules, and memory files
+  npx ai-game-init --version Print version
 `);
 }
 

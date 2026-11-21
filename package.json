@@ -1,12 +1,9 @@
 {
   "name": "ai-game-init",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Game Dev Partner (/game-development) — Personal Assistant AI Agent & 7-Stage Hierarchical Game Studio with Elite Asset & Reference Research Team for game",
   "bin": {
-    "npx-ai-game-init": "./bin/cli.js",
-    "ai-game-init": "./bin/cli.js",
-    "ai-game": "./bin/cli.js",
-    "game-development": "./bin/cli.js"
+    "ai-game-init": "./bin/cli.js"
   },
   "files": [
     "bin/",

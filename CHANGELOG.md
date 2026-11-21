@@ -4,17 +4,24 @@
 
 ---
 
-## [v2.0.1] — 2026-11-21 (Short CLI Command `npx-ai-game-init` & Global Link)
+## [v2.0.2] — 2026-11-21 (Standardize CLI Command to `npx ai-game-init`)
+### Changed (สิ่งที่ปรับปรุง)
+- สำรองไฟล์เดิมลงใน `backups/20261121-2241/` ก่อนแก้ไขตามกฎ File Safety
+- ปรับเอกสารและสคริปต์ CLI ([package.json](/package.json), [bin/cli.js](/bin/cli.js), [README.md](/README.md), [PROJECT_MEMORY.md](/PROJECT_MEMORY.md)) ให้แสดงและใช้งานคำสั่งเดียว `npx ai-game-init` สำหรับติดตั้งผ่าน Terminal
+
+---
+
+## [v2.0.1] — 2026-11-21 (Short CLI Command `npx ai-game-init` & Global Link)
 ### Changed & Added (สิ่งที่ปรับปรุง)
 - สำรองไฟล์เดิมลงใน `backups/20261121-2238/` ก่อนแก้ไขตามกฎ File Safety
-- ปรับปรุง [package.json](/package.json) และ [bin/cli.js](/bin/cli.js) พร้อมทำ `npm link` ระดับเครื่อง (เหมือน `nongton`) เพื่อให้เรียกใช้งานด้วยชื่อสั้นๆ `npx-ai-game-init` หรือ `npx ai-game-init` ได้จากทุกโฟลเดอร์ในเครื่องทันทีโดยไม่ต้องพิมพ์ URL ของ GitHub
+- ปรับปรุง [package.json](/package.json) และ [bin/cli.js](/bin/cli.js) พร้อมทำ `npm link` ระดับเครื่อง เพื่อให้เรียกใช้งานด้วยคำสั่ง `npx ai-game-init` ได้จากทุกโฟลเดอร์ในเครื่องทันทีโดยไม่ต้องพิมพ์ URL ของ GitHub
 
 ---
 
 ## [v2.0.0] — 2026-11-21 (Add `npx` Single-Command GitHub CLI Installer)
 ### Added & Updated (สิ่งที่เพิ่มและอัปเดต)
 - สำรองไฟล์เดิมลงใน `backups/20261121-2234/` ก่อนทำการแก้ไขตามกฎ File Safety
-- สร้าง [package.json](/package.json) และสคริปต์ CLI [bin/cli.js](/bin/cli.js) สำหรับติดตั้งผู้ช่วยส่วนตัว `/game-development` ด้วยคำสั่งเดียว `npx github:klakarkhaycturwithy-sketch/ai-game` (หรือ `npx ai-game`) เหมือนโปรเจกต์ `nongton`
+- สร้าง [package.json](/package.json) และสคริปต์ CLI [bin/cli.js](/bin/cli.js) สำหรับติดตั้งผู้ช่วยส่วนตัว `/game-development` ด้วยคำสั่งเดียว `npx ai-game-init`
 - รองรับการสำรองไฟล์เดิมอัตโนมัติลง `backups/YYYYMMDD-HHMM/` การปกป้องไฟล์ความจำไม่ให้ถูกเขียนทับ และคำสั่งตรวจสถานะ `npx ai-game status` (ตรวจเช็กความพร้อมของไฟล์และสกิลทั้งหมด 17 รายการ)
 - อัปเดต [README.md](/README.md) และ [PROJECT_MEMORY.md](/PROJECT_MEMORY.md) และซิงก์ขึ้น GitHub Repository `klakarkhaycturwithy-sketch/ai-game`
 

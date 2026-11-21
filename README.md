@@ -16,21 +16,16 @@
 
 ---
 
-## 1.1 วิธีติดตั้งหรืออัปเดตใน Terminal ด้วยคำสั่งเดียว (`npx` เหมือนโปรเจกต์ `nongton`)
+## 1.1 วิธีติดตั้งหรืออัปเดตใน Terminal ด้วยคำสั่งเดียว (`npx ai-game-init`)
 
 คุณ `game` สามารถดึงผู้ช่วยส่วนตัว **Game Dev Partner (`/game-development`)** ไปติดตั้งในโฟลเดอร์โปรเจกต์เกมใหม่ๆ ได้ทุกเครื่องด้วยคำสั่งเดียว (ระบบจะสำรองไฟล์เดิมลง `backups/YYYYMMDD-HHMM/` ให้อัตโนมัติ และไม่เขียนทับไฟล์ความจำ `PROJECT_MEMORY.md`, `CHANGELOG.md`, `ASSETS.md` ที่มีอยู่แล้ว):
 
 ```bash
-# พิมพ์คำสั่งสั้นๆ คำสั่งเดียวใน Terminal ของโฟลเดอร์เกมใหม่ได้เลย (เหมือนโปรเจกต์ nongton)
-npx-ai-game-init
-# หรือ
+# พิมพ์คำสั่งสั้นๆ คำสั่งเดียวใน Terminal ของโฟลเดอร์เกมใหม่ได้เลย
 npx ai-game-init
 
 # เช็กสถานะความพร้อมของไฟล์ทั้งหมดในโฟลเดอร์ปัจจุบัน
-npx-ai-game-init status
-
-# (กรณีใช้งานบนคอมเครื่องอื่นที่ยังไม่ได้เชื่อม Global Link สามารถดึงตรงจาก GitHub ได้ด้วย)
-npx github:klakarkhaycturwithy-sketch/ai-game
+npx ai-game-init status
 ```
 
 ---
@@ -78,4 +73,4 @@ npx github:klakarkhaycturwithy-sketch/ai-game
 - `templates/supabase/` — เทมเพลตเตรียมเชื่อมต่อ Supabase (`README.md` playbook, `supabaseClient.example.js`, `schema.sql`, `.env.example`) ยังไม่สร้างโปรเจกต์จริง
 - [opencode.jsonc](/opencode.jsonc) — การตั้งค่า OpenCode ระดับโปรเจกต์: โหลดกฎ `always_on` จาก `.agents/rules/game-dev-partner.md` เป็น `instructions` ให้ผู้ช่วยส่วนตัวทำงานใน OpenCode ได้ทันที
 - [.opencode/commands/game-development.md](/.opencode/commands/game-development.md) — คำสั่ง Slash `/game-development` สำหรับ OpenCode (เรียกใช้สกิล `game-development` และโหลดไฟล์ความจำโปรเจกต์อัตโนมัติ)
-- [package.json](/package.json) และ [bin/cli.js](/bin/cli.js) — ระบบ CLI Installer สำหรับคำสั่ง `npx-ai-game-init` (หรือ `npx ai-game-init`)
+- [package.json](/package.json) และ [bin/cli.js](/bin/cli.js) — ระบบ CLI Installer สำหรับคำสั่ง `npx ai-game-init`
