@@ -1,6 +1,13 @@
-﻿# CHANGELOG.md — ประวัติการเปลี่ยนแปลงโปรเจกต์ (Game Dev Partner)
+# CHANGELOG.md — ประวัติการเปลี่ยนแปลงโปรเจกต์ (Game Dev Partner)
 
 บันทึกการเปลี่ยนแปลงทุกเซสชันของโปรเจกต์ `โฟลเดอร์โปรเจกต์นี้` โดยเรียงจากล่าสุดลงไปเก่าสุด
+
+---
+
+## [v2.0.1] — 2026-11-21 (Short CLI Command `npx-ai-game-init` & Global Link)
+### Changed & Added (สิ่งที่ปรับปรุง)
+- สำรองไฟล์เดิมลงใน `backups/20261121-2238/` ก่อนแก้ไขตามกฎ File Safety
+- ปรับปรุง [package.json](/package.json) และ [bin/cli.js](/bin/cli.js) พร้อมทำ `npm link` ระดับเครื่อง (เหมือน `nongton`) เพื่อให้เรียกใช้งานด้วยชื่อสั้นๆ `npx-ai-game-init` หรือ `npx ai-game-init` ได้จากทุกโฟลเดอร์ในเครื่องทันทีโดยไม่ต้องพิมพ์ URL ของ GitHub
 
 ---
 
