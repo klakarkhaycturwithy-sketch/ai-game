@@ -1,4 +1,4 @@
-﻿---
+---
 name: game-development
 description: >-
   Game Dev Partner (/game-development) — Personal Assistant AI Agent & 6-Role Virtual Game Studio
