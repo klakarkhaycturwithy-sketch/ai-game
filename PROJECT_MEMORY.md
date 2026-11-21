@@ -54,6 +54,10 @@
 - **[2026-11-21] ลบ path เครื่อง local ออกจากเอกสาร (`v1.9.0`):**
   - ลบ path `c:\Users\klaka\Code Antigravity\ai game` และ `file:///c:/Users/klaka/...` ออกจากเอกสารทั้งหมดเพื่อไม่ให้แสดงบน GitHub
   - เปลี่ยนลิงก์ภายในโปรเจกต์เป็น root-relative (เช่น `/ASSETS.md`) และ path ระดับเครื่อง (`.gemini/...`) เป็นข้อความ code (`~/.gemini/...`)
+- **[2026-11-21] สร้างระบบตัวติดตั้ง `npx` คำสั่งเดียวเหมือนโปรเจกต์ `nongton` (`v2.0.0`):**
+  - สร้าง `package.json` และสคริปต์ CLI `bin/cli.js` เพื่อให้พิมพ์คำสั่งเดียว `npx github:klakarkhaycturwithy-sketch/ai-game` (หรือ `npx ai-game`) ดึงผู้ช่วยส่วนตัว `/game-development` ไปติดตั้งในโฟลเดอร์โปรเจกต์เกมใหม่ๆ ได้ทุกเครื่อง
+  - มีระบบสำรองไฟล์อัตโนมัติลง `backups/YYYYMMDD-HHMM/` ก่อนอัปเดต และปกป้องไฟล์ความจำ (`PROJECT_MEMORY.md`, `CHANGELOG.md`, `ASSETS.md`) ไม่ให้ถูกเขียนทับ
+  - สำรองไฟล์เดิมก่อนแก้ไขไว้ที่ `backups/20261121-2234/` และอัปเดตขึ้น GitHub Repository `klakarkhaycturwithy-sketch/ai-game`เรียบร้อย
 
 ---
 
@@ -77,6 +81,9 @@
   ├── CHANGELOG.md
   ├── ASSETS.md
   ├── README.md
+  ├── package.json
+  ├── bin/
+  │   └── cli.js
   ├── opencode.jsonc
   ├── backups/
   ├── .opencode/

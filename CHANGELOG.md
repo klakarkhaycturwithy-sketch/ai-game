@@ -4,6 +4,15 @@
 
 ---
 
+## [v2.0.0] — 2026-11-21 (Add `npx` Single-Command GitHub CLI Installer)
+### Added & Updated (สิ่งที่เพิ่มและอัปเดต)
+- สำรองไฟล์เดิมลงใน `backups/20261121-2234/` ก่อนทำการแก้ไขตามกฎ File Safety
+- สร้าง [package.json](/package.json) และสคริปต์ CLI [bin/cli.js](/bin/cli.js) สำหรับติดตั้งผู้ช่วยส่วนตัว `/game-development` ด้วยคำสั่งเดียว `npx github:klakarkhaycturwithy-sketch/ai-game` (หรือ `npx ai-game`) เหมือนโปรเจกต์ `nongton`
+- รองรับการสำรองไฟล์เดิมอัตโนมัติลง `backups/YYYYMMDD-HHMM/` การปกป้องไฟล์ความจำไม่ให้ถูกเขียนทับ และคำสั่งตรวจสถานะ `npx ai-game status` (ตรวจเช็กความพร้อมของไฟล์และสกิลทั้งหมด 17 รายการ)
+- อัปเดต [README.md](/README.md) และ [PROJECT_MEMORY.md](/PROJECT_MEMORY.md) และซิงก์ขึ้น GitHub Repository `klakarkhaycturwithy-sketch/ai-game`
+
+---
+
 ## [v1.9.0] — 2026-11-21 (Remove Local Absolute Paths from Docs)
 ### Changed (สิ่งที่เปลี่ยน)
 - ลบ path เครื่อง local (เช่น `c:\Users\klaka\Code Antigravity\ai game` และ `file:///c:/Users/klaka/...`) ออกจากเอกสารทั้งหมดเพื่อไม่ให้แสดงบน GitHub และให้ลิงก์ relative ทำงานได้
